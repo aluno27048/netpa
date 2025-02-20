@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As minhas Unidades Curriculares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfe6ee;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #004a80;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 15px;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #004a80;
+            color: white;
+            font-weight: bold;
+        }
+        .locked {
+            background-color: #f9f9f9;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        NetPA
+        <a href="javascript:void(0)" id="authButton" onclick="toggleAuth()">Entrar</a>
+    </div>
+
+    <div class="container">
+        <h2>Disciplinas Aprovadas</h2>
+        <table>
+            <tr>
+                <th>Período</th>
+                <th>Ano Cur.</th>
+                <th>Disciplina</th>
+                <th>Turma</th>
+                <th>Inscrição</th>
+                <th>Estado</th>
+                <th>Avaliação</th>
+                <th>ECTS</th>
+                <th>Época Inscrição</th>
+                <th>Nota Final</th>
+            </tr>
+            <tr><td>Anual</td><td>1</td><td>Análise Matemática</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-01-16</td><td>6,00</td><td>Exame</td><td class="locked">18.3</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Física Aplicada</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-01-27</td><td>5,00</td><td>Exame</td><td class="locked">18.2</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Desenho Técnico e Análise Gráfica</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-01-07</td><td>4,00</td><td>Frequência</td><td class="locked">18.0</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Química Aplicada</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-02-03</td><td>2,00</td><td>Exame</td><td class="locked">18.0</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Materiais de Construção</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-02-05</td><td>6,00</td><td>Exame</td><td class="locked">19.0</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Mecânica Aplicada</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-02-06</td><td>6,00</td><td>Exame</td><td class="locked">18.5</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Álgebra</td><td>TAD</td><td>29/07/2024</td><td>Aprovado</td><td>2025-01-30</td><td>6,00</td><td>Exame</td><td class="locked">17.5</td></tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Disciplinas Inscritas</h2>
+        <table>
+            <tr>
+                <th>Período</th>
+                <th>Ano Cur.</th>
+                <th>Disciplina</th>
+                <th>Turma</th>
+                <th>Inscrição</th>
+                <th>Estado</th>
+                <th>Avaliação</th>
+                <th>ECTS</th>
+                <th>Época Inscrição</th>
+                <th>Nota Final</th>
+            </tr>
+            <tr><td>Anual</td><td>1</td><td>Análise Matemática II</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>6,00</td><td>-</td><td class="locked">-</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Ferramentas Digitais para Projetos de Engenharia e Construção</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>4,00</td><td>-</td><td class="locked">-</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Geologia de Engenharia</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>5,00</td><td>-</td><td class="locked">-</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Processos Gerais de Construção I</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>6,00</td><td>-</td><td class="locked">-</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Resistência dos Materiais</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>5,00</td><td>-</td><td class="locked">-</td></tr>
+            <tr><td>Anual</td><td>1</td><td>Topografia e Técnicas de Levantamento</td><td>TAD</td><td>29/07/2024</td><td>Inscrito</td><td>-</td><td>4,00</td><td>-</td><td class="locked">-</td></tr>
+        </table>
+    </div>
+</body>
+</html>
